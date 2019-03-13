@@ -1,0 +1,121 @@
+.body {
+  background-color: black;
+}
+
+.container {
+  width: 900px;
+  margin: 40px auto;
+}
+
+.card-align {
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+  padding: 40px;
+  margin: 20px;
+/*  box-shadow: 0px, 10px, 50px, rgba(0,0,0,0.1);*/
+}
+
+
+/*introduction*/
+
+#introduction {
+  background-image: url("images/blue.jpeg");
+}
+
+/*img*/
+
+.img-introsize {
+  width: 250px;
+}
+
+.img-designsize {
+  width: 200px;
+}
+
+.img-circle {
+  border-radius: 50%;
+  border: 0.5px solid #902923;
+}
+
+.img-changecolor {
+  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .5s ease-in-out;
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+ /* -webkit-transform: scale(1.01);*/
+}
+
+.img-rotate {
+ -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/*skills*/
+
+/*INTERESTS*/
+
+#skills {
+  background-image: url("images/yellow.png");
+  color: white;
+  padding: 100px;
+}
+
+/*footer*/
+
+
+#footer {
+  color: white;
+  background: url("images/dark-honeycomb.png");
+  padding: 20px;
+}
+
+.list-inline {
+  padding-left: 0px;
+}
+
+.list-inline li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+}
+
+.list-inline i {
+  font-size: 50px;
+  color: rgba(240, 240, 240, 0.7);
+}
+
+.list-inline i:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+/*bootstrap*/
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
